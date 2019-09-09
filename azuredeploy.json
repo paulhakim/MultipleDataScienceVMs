@@ -385,6 +385,7 @@
             "location": "[resourceGroup().location]",
             "apiVersion": "2015-06-15",
             "dependsOn": [
+                "[concat('nsg_', toLower(parameters('vmnameprefix')))]"
             ],
             "tags": {
                 "displayName": "vnet"
