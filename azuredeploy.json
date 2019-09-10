@@ -364,6 +364,20 @@
                     "priority": 100,
                     "direction": "Inbound"
                   }
+                },
+                {
+                    "name": "JupyterNoteBook_rule",
+                    "properties": {
+                      "description": "Allow Ports 8000-8010 For Jupyter Notebook",
+                      "protocol": "Tcp",
+                      "sourcePortRange": "*",
+                      "destinationPortRange": "8000-8010",
+                      "sourceAddressPrefix": "Internet",
+                      "destinationAddressPrefix": "*",
+                      "access": "Allow",
+                      "priority": 100,
+                      "direction": "Inbound"
+                    }
                 }
               ]
             }
